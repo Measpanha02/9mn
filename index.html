@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/x-icon" href="image/icon.jpg">
+  <title>College of Science & Tech - UC</title>
+  <style>
+    @font-face {
+      font-family: 'Khmer OS';
+      src: url('fonts/KhmerOS.ttf') format('truetype');
+    }
+
+	.khmer-text {
+  font-family: 'Khmer OS', Arial, sans-serif;
+}
+        
+    body {
+      margin: 0;
+      font-family: 'Khmer OS', Arial, sans-serif;
+      background-color:white;
+      color: #222;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 10px 0;
+    }
+
+     .navbar {
+      background-color: #003366;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+
+    .navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 16px;
+  display: inline-block;
+  transition: all 0.1s ease;
+  transform: scale(1);
+}
+
+.navbar a:hover {
+  background-color: green;
+ 
+
+}
+
+ .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 260px;
+  max-width: 95vw;
+  left: 50%;
+  transform: translateX(-50%); /* Center it */
+ 
+  z-index: 1;
+  padding: 8px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .dropdown-content {
+    max-width: 90vw;
+  }
+}
+.dropdown-content a {
+  display: block;
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-family: 'Khmer OS Siemreap', Arial, sans-serif;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dropdown-content a span {
+  font-style: italic;
+}
+
+
+    .dropdown-content a:hover {
+      background-color:lightgrey;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: green;
+    }
+    .hero-banner {
+      width: 100%;
+      height: auto;
+      animation: slideIn 6s ease-in-out forwards;
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateX(-100%); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      text-align: center;
+      color: #003366;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .gallery-item {
+      width: calc(25% - 20px);
+      text-align: center;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      border-radius: 6px;
+      border: 3px solid #ffcc00;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.02);
+      box-shadow:  3px 3px red,
+  -1em 0 0.4em olive;;
+    }
+
+    .caption {
+      margin-top: 8px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 992px) {
+      .gallery-item {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .nav-bar {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .announcement {
+      background-color: darkblue;
+      color: white;
+      padding: 12px;
+      text-align: center;
+      animation: ticker 20s linear infinite;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    @keyframes ticker {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    footer {
+      background-color: #0a0066;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    footer img {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="image/banner.jpg" alt="College Banner" class="hero-banner" />
+	</header>
+    <div class="navbar">
+    <a href="index.html" target="_blank">Home</a>
+    <a href="news.html" target="_blank">News</a>
+    <a href="faculty.html" target="_blank">Faculty Members</a>
+    <a href="training.html" target="_blank">Professional Training</a>
+    <a href="videos.html" target="_blank">Videos</a>
+    <div class="dropdown">
+      <a class="dropbtn"> Bachelor Programs</a>
+      <div class="dropdown-content">
+        <a href="IT.html" target="_blank">Information Technology <span style="color:blue;">Since 2003</span></a>
+        <a href="CS.html" target="_blank">Computer Science <span style="color:blue;">Since 2003</span></a>
+        <a href="ETC.html" target="_blank">Electronics and Telecommunications <span style="color:blue;">Since 2003</span></a>
+        <a href="GDM.html" target="_blank">Graphic Design And Multimedia <span style="color:red;">New 2026</span></a>
+        <a href="BMIT.html" target="_blank">Business Management Information Technology <span style="color:red;">New 2026</span></a>
+        <a href="NECS.html" target="_blank">Network Engineering and Cyber Security <span style="color:red;">New 2026</span></a>
+        <a href="DSAI.html" target="_blank">Data Science and Artificial Intelligence <span style="color:red;">New 2026</span></a>
+      </div>
+    </div>
+	<div class="dropdown">
+   <a>Computer Labs</a>
+	 <div class="dropdown-content">
+	  <a href="Lab1.html">Multimedia Lab</a>
+                <a href="Lab2.html" target="_blank">E-learning Lab</a>
+                <a href="Lab3.html" target="_blank">Networking Lab</a>
+                <a href="Lab4.html" target="_blank">IT Center Lab</a>
+  </div>
+ </div>
+    </div>
+ 
+
+  <main>
+    <section class="section">
+      <p>ស្វាគមន៍មកកាន់មហាវិទ្យាល័យវិទ្យាសាស្ត្រ និងបច្ចេកវិទ្យា នៃសាកលវិទ្យាល័យកម្ពុជា។ សូមចុះឈ្មោះឥឡូវនេះ ឬអញ្ជើញមកផ្ទាល់!</p>
+      <p>Welcome to the College of Science and Technology at The University of Cambodia. Enroll now or visit our campus for more info!</p>
+    </section>
+
+    <section class="section">
+      <h2>Student Activities</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <a href="images/a.jpg" target="_blank"><img src="images/a.jpg" alt="Web Development"></a>
+          <div class="caption">Web Development</div>
+        </div>
+        <div class="gallery-item">
+          <a href="images/b.JPG" target="_blank"><img src="images/b.JPG" alt="Multimedia Lab"></a>
+          <div class="caption">Multimedia Lab</div>
+        </div>
+        <div class="gallery-item">
+          <a href="images/c.jpg" target="_blank"><img src="images/c.jpg" alt="IT-Center Lab"></a>
+          <div class="caption">IT-Center Lab</div>
+        </div>
+        <div class="gallery-item">
+          <a href="images/d.jpg" target="_blank"><img src="images/d.jpg" alt="Graduation 2025"></a>
+          <div class="caption">Graduation 2025</div>
+        </div>
+      </div>
+    </section>
+ <div class="announcement">
+    <img src="images/cost.jpg" width="40" /> Welcome! IT Experts to College of Science and Technology!
+  </div>
+    <section class="section">
+      <h2>Computer Labs</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <a href="images/e.jpg" target="_blank"><img src="images/e.jpg" alt="Multimedia Lab"></a>
+          <div class="caption">Multimedia Lab</div>
+        </div>
+        <div class="gallery-item">
+          <a href="images/f.jpg" target="_blank"><img src="images/f.jpg" alt="Networking Lab"></a>
+          <div class="caption">Networking Lab</div>
+        </div>
+        <div class="gallery-item">
+          <a href="images/g.jpg" target="_blank"><img src="images/g.jpg" alt="IT-Center Lab"></a>
+          <div class="caption">IT-Center Lab</div>
+        </div>
+        <div class="gallery-item">
+          <a href="images/h.jpg" target="_blank"><img src="images/h.jpg" alt="Update"></a>
+          <div class="caption">IT-Center Update</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="image/uc.png" width="40" height="40" alt="UC Logo" />
+    <p>© University of Cambodia | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
